@@ -1,9 +1,9 @@
-$(document).ready(function(){
-  $(".owl-carousel").owlCarousel({
-      items: 2,
-      dots: true
-  });
-});
+// $(document).ready(function(){
+//   $(".owl-carousel").owlCarousel({
+//       items: 2,
+//       dots: true
+//   });
+// });
 
 let lastScrollTop = 0;
 

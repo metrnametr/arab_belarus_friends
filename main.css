@@ -581,16 +581,21 @@ a {
     margin-bottom: 100px;
 }
 
+.shares__row {
+    display: flex;
+    margin: 0 -15px;
+}
+
 .shares__column {
     display: flex;
-    /* margin: 0 -15px; */
-    width: min-content;
+    
+    padding: 0 15px;
+    /* width: min-content; */
 }
 
 .share {
     display: flex;
     flex: 1 1 50%;
-    /* padding: 0 15px; */
 }
 
 .share__description{
