@@ -451,7 +451,7 @@ a {
 .grid__item-description {
     font-size: 0.8125rem;
     color: var(--dark);
-    line-height: 15px;
+    line-height: 1rem;
     font-weight: 200;
 }
 
@@ -545,6 +545,7 @@ a {
     margin-bottom: 118px;
     color: var(--dark);
     font-weight: 200;
+    line-height: 1.3rem;
 }
 
 .service__btn {
@@ -618,6 +619,7 @@ a {
     color: var(--light);
     flex: 1 1 auto;
     margin-bottom: 81px;
+    line-height: 0.9rem;
 }
 
 .share__img {
@@ -691,6 +693,7 @@ a {
     font-weight: 200;
     color: var(--light);
     font-size: 1.6rem;
+    line-height: 3rem;
 }
 
 
@@ -1005,6 +1008,7 @@ input.name::placeholder, input.number_phone::placeholder{
       margin-bottom: 20px;
       color: var(--light);
       font-weight: 200;
+      line-height: 1.2rem;
   }
   .footer__column:first-child {
     flex: 0 0 20%;
