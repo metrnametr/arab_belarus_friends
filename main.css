@@ -34,6 +34,7 @@ html, body {
     --dark: ##1B262C;
     --light: #FCFCFC;
     --blue-light: #BBE1FA;
+    --blue-dark: #0F4C75;
     font-family: 'Gilroy-Light', system-ui;
     overflow-x: hidden;
     transition: .2s ease-in-out;
@@ -433,6 +434,7 @@ a {
 
 .why-belarus .why-belarus__grid .grid__item .grid__item-title {
     margin-bottom: 20px;
+    color: var(--color);
 }
 
 .grid__item {
@@ -442,7 +444,6 @@ a {
 
 .grid__item {
     font-size: .93rem;
-    color: var(--color);
     font-weight: 700;
 }
 
@@ -969,4 +970,93 @@ input.name::placeholder, input.number_phone::placeholder{
 
   nav.static {
       position: static;
+  }
+
+
+  .footer {
+    padding: 100px;
+    background: var(--blue-dark);
+  }
+
+  .footer__row {
+      display: flex;
+      justify-content: space-between;
+  }
+
+  .footer__column .title {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: var(--light);
+      margin-bottom: 20px;
+  }
+  .footer__column .logo {
+      margin-bottom: 45px;
+  }
+
+  .footer__column .logo img {
+      max-width: 160px;
+      height: 40px;
+  }
+  .footer__column a{
+      color: var(--light);
+  }
+  .footer__column .policy, .footer__column .agreement {
+      margin-bottom: 20px;
+      color: var(--light);
+      font-weight: 200;
+  }
+  .footer__column:first-child {
+    flex: 0 0 20%;
+  }
+
+  .footer__column .social-icons {
+      display: flex;
+  }
+  .footer__column .social-icons .social-icons__item {
+    border: 0;
+    margin-right: 27px;
+  }
+  .footer__column .social-icons .social-icons__item a{
+      padding: 0;
+      width: 100%;
+      height: 100%;
+  }
+
+  .footer__column .footer__nav li {
+      margin-bottom: 20px;
+      font-weight: 200;
+      font-size: 1.1rem;
+      line-height: 1.2rem;
+      color: var(--light);
+  }
+  .footer__column .footer__nav li:last-child {
+      margin-bottom: 0;
+  }
+
+  .footer__column .agreement {
+      margin-bottom: 0;
+  }
+
+  .footer__column .contacts {
+      font-weight: 200;
+
+  }
+
+  .footer__column .contacts .phone, .footer__column .contacts .email {
+      margin-bottom: 20px;
+  }
+
+  .footer__column .date-of-work{
+    color: var(--light);
+    font-weight: 200;
+    font-size: 1.1rem;
+    line-height: 1.2rem;
+  }
+
+  .footer__column .date-of-work p {
+      margin-bottom: 20px;
+  }
+
+  .footer__column .date-of-work p:last-child {
+      margin-bottom: 0;
   }

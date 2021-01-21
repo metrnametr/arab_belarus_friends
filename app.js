@@ -38,7 +38,7 @@ const navScrollFlow = () => {
 $(window).scroll(navScrollFlow);
 
 
-$(".header__nav ul a").on("click", function(e) {
+function smoothScroll(e){
   if (
     !$(this)
       .parent()
@@ -63,6 +63,15 @@ $(".header__nav ul a").on("click", function(e) {
     );
     return false;
   }
+}
+
+$(".header__nav ul a").on("click", function(e) {
+  smoothScroll.call(this, e);
+});
+
+
+$(".footer__nav ul a").on("click", function(e) {
+  smoothScroll.call(this, e);
 });
 
 
