@@ -1417,7 +1417,7 @@ input.name::placeholder, input.number_phone::placeholder{
 
   @media screen and (max-width: 470px )  {
     html {
-        font-size: 12px !important;
+        /* font-size: 12px !important; */
     }
     .service__img img {
         width: 100%;
@@ -1425,6 +1425,10 @@ input.name::placeholder, input.number_phone::placeholder{
 
     .our-contacts__form {
         padding: 50px 30px;
+    }
+
+    .header__body .make-your-life {
+        margin-bottom: 80px;
     }
 }
 
