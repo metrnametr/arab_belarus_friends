@@ -1430,6 +1430,10 @@ input.name::placeholder, input.number_phone::placeholder{
     .header__body .make-your-life {
         margin-bottom: 80px;
     }
+
+    .header__body h1 {
+        font-size: 3rem;
+    }
 }
 
 @media screen and (max-width: 340px )  {
