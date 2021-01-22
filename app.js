@@ -62,12 +62,15 @@ function smoothScroll(e){
     const a = $($(this).attr("href"));
     let os = 0;
     if (w < 1136) {
-      if ($("#menu-toggle").hasClass("open")) {
+      // if ($("#menu-toggle").hasClass("open")) {
         $("#menu-toggle").trigger("click");
-        os = 68;
-      }
+        os = 60;
+      // }
     }
 
+    
+
+    $('.navbar-collapse__nav').addClass('open')
     $("html,body").animate(
       {
         scrollTop: a.offset().top - os
@@ -101,6 +104,7 @@ const activeMenuLinksOnScroll = () => {
   var scroll_top = $(document).scrollTop();
 
   $(menu_selector + " a").each(function() {
+    
     if (
       !$(this)
         .parent()
@@ -108,7 +112,6 @@ const activeMenuLinksOnScroll = () => {
     ) {
       var hash = $(this).attr("href");
       var target = $(hash);
-
       if (
         target.position().top <= scroll_top &&
         target.position().top + target.outerHeight() > scroll_top
@@ -122,8 +125,16 @@ const activeMenuLinksOnScroll = () => {
   });
 };
 
+function scrollBar() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 $(window).scroll(() => {
   activeMenuLinksOnScroll();
+  scrollBar();
 });
 
 $("form input[type=tel]").inputmask({
