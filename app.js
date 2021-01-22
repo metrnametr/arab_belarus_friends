@@ -1,9 +1,22 @@
-// $(document).ready(function(){
-//   $(".owl-carousel").owlCarousel({
-//       items: 2,
-//       dots: true
-//   });
-// });
+  
+
+if ($(window).width() < 820)  {
+  console.log(1)
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 1,
+        dots: true
+    });
+  });
+} else {
+  $(document).ready(function(){
+    $(".owl-carousel").owlCarousel({
+        items: 2,
+        dots: true
+    });
+  });
+
+}
 
 let lastScrollTop = 0;
 
@@ -74,6 +87,14 @@ $(".footer__nav ul a").on("click", function(e) {
   smoothScroll.call(this, e);
 });
 
+
+$('.collapse-btn').on("click", function(e){
+  if ($('.navbar-collapse__nav').hasClass('open')) {
+    $('.navbar-collapse__nav').removeClass('open')
+  } else {
+    $('.navbar-collapse__nav').addClass('open')
+  }
+})
 
 const activeMenuLinksOnScroll = () => {
   var menu_selector = ".header__nav ul";

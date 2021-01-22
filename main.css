@@ -8,24 +8,41 @@
    } */
 
    @font-face {
-    font-family: "Gilroy-Light";
-    src: url("/fonts/Gilroy-Light.eot");
-    /* font-weight: 200; */
-    font-style: normal ;
-   }
+	font-family: 'Gilroy';
+	src: url('./fonts/Gilroy-Bold.eot');
+	src: local('☺'), url('./fonts/Gilroy-Bold.woff') format('woff'), url('./fonts/Gilroy-Bold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./fonts/Gilroy-Light.eot');
+	src: local('☺'), url('./fonts/Gilroy-Light.woff') format('woff'), url('./fonts/Gilroy-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./fonts/Gilroy-Medium.eot');
+	src: local('☺'), url('./fonts/Gilroy-Medium.woff') format('woff'), url('./fonts/Gilroy-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('./fonts/Gilroy-Light.eot');
+	src: local('☺'), url('./fonts/Gilroy-Light.woff') format('woff'), url('./fonts/Gilroy-Light.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
 
-   @font-face {
-    font-family: "Gilroy-ExtraBold";
-    src: url("/fonts/Gilroy-ExtraBold.eot");
-    /* font-weight: 200; */
-    font-style: normal ;
-   }
 
 * {
     padding:0 ;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Gilroy-Light', system-ui;
+    /* font-family: 'Gilroy-Light', system-ui; */
+    font-family: Gilroy;
 }
 html, body {
     /* height: 100%; */
@@ -35,7 +52,8 @@ html, body {
     --light: #FCFCFC;
     --blue-light: #BBE1FA;
     --blue-dark: #0F4C75;
-    font-family: 'Gilroy-Light', system-ui;
+    /* font-family: 'Gilroy-Light', system-ui; */
+    font-family: Gilroy;
     overflow-x: hidden;
     transition: .2s ease-in-out;
 }
@@ -52,7 +70,8 @@ a {
 
 .header {
     background-size: auto, auto;
-    font-family: 'Gilroy-Light', system-ui;
+    /* font-family: 'Gilroy-Light', system-ui; */
+    font-family: Gilroy;
 }
 
 .wrapper__pre-nav {
@@ -299,7 +318,8 @@ a {
     color: #0F4C75;
     font-size: 2rem;
     font-weight: 200;
-    font-family:'Gilroy-Light', system-ui ;
+    /* font-family:'Gilroy-Light', system-ui ; */
+    font-family: Gilroy;
     margin-bottom: 220px;
 }
 
@@ -348,7 +368,8 @@ a {
 }
 
 .about-us__row-top h2 {
-    font-family: 'Gilroy-ExtraBold', sans-serif;
+    /* font-family: 'Gilroy-ExtraBold', sans-serif; */
+    font-family: Gilroy;
     color: var(--light);
     font-size: 4rem;
     text-transform: uppercase;
@@ -367,7 +388,8 @@ a {
 
 .about__row__column {
     color: var(--light);
-    font-family: 'Gilroy-Light', system-ui;
+    /* font-family: 'Gilroy-Light', system-ui; */
+    font-family: Gilroy;
     font-weight: 200;
     font-size: 1.5rem;
     line-height: 1.875rem;
@@ -392,13 +414,15 @@ a {
 .why-we__title {
     font-size: 2rem;
     /* font-family: 'Gilroy-ExtraBold', sans-serif; */
+    font-family: Gilroy;
     margin-bottom: 18px;
     font-weight: 700;
 }
 
 .why-we__description {
     font-size: 1rem;
-    font-family: 'Gilroy-Light', system-ui;
+    /* font-family: 'Gilroy-Light', system-ui; */
+    font-family: Gilroy;
     font-weight: 200;
     max-width: 300px;
     line-height: 1.2rem;
@@ -1065,3 +1089,359 @@ input.name::placeholder, input.number_phone::placeholder{
   .footer__column .date-of-work p:last-child {
       margin-bottom: 0;
   }
+
+  @media screen and (max-width: 1110px ) {
+
+    html, body {
+        font-size: 14px !important;
+    }
+    .wrapper__pre-nav {
+        display: none;
+    }
+
+    .wrapper__nav .logo{
+        margin: 0;
+    }
+
+    .header__nav .menu-nav .menu-nav__item a {
+        padding: 23px 25px;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .about-us .img-row__column img{
+        width: 100%;
+    }
+
+    .why-belarus .why-belarus__grid .grid__item {
+        height: 200px;
+        padding: 10px;
+    }
+
+    .services__row {
+        flex-direction: column;
+    }
+
+    .service__img {
+        max-width: 100%;
+    }
+    .service {
+        margin-bottom: 20px;
+    }
+
+    .our-contacts__form {
+        padding: 60px 80px
+    }
+    .our-contacts__form {
+        margin-right: 25px;
+    }
+  }
+
+  .collapse-btn {
+      display: none;
+  }
+
+
+  @media screen and (max-width: 820px )  {
+
+    .share {
+        margin-right: 20px;
+    }
+
+    .wrapper__header-body {
+        height: calc(100vh - 70px);
+    }
+
+    .about-us__row-top {
+        flex-direction: column-reverse;
+    }
+
+    .about__row__column {
+        margin-bottom: 20px;
+        padding: 0;
+    }
+
+    .img-row__column {
+        max-width: 100%;
+    }
+
+    .why-we__row {
+        flex-direction: column;
+        margin-top: 40px;
+    }
+
+    .why-we__row .why-we-row__column {
+        margin-bottom: 20px;
+        text-align: center;
+
+    }
+
+    .why-we__description {
+        margin: 0 auto;
+        max-width: 70%;
+    }
+    .why-belarus .why-belarus__grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .why-belarus .why-belarus__grid .grid__item {
+        border: none;
+        border-bottom: 2px solid var(--color);
+        margin-bottom: 20px;
+    }
+
+    .how-we-work__title {
+        margin-bottom: 80px;
+    }
+
+    .how-we-work__column:first-child {
+        margin-bottom: 65px;
+    }
+
+    .how-we-work__item .count {
+        margin-right: 15px;
+        line-height: 3.5rem;
+    }
+
+    .how-we-work__row {
+        flex-direction: column;
+    }
+
+    .our-contacts__row {
+        flex-direction: column-reverse;
+    }
+
+    .our-contacts__form {
+        margin: 0 auto;
+        align-items: center;
+    }
+
+    .our-contacts__title {
+        margin-bottom: 80px;
+    }
+    .our-contacts .contacts .phone, .our-contacts .contacts .date-of-work, .our-contacts .contacts .email {
+        margin-bottom: 15px;
+    }
+
+    #our-contacts {
+        margin-bottom: 15px;
+    }
+
+    .our-contacts .contacts .date-of-work::before {
+        content: "";
+        display: block;
+        background: url(./img/shed.svg) no-repeat;
+        width: 15px;
+        height: 17px;
+        float: left;
+        margin: 3px 10px 0 0;
+        background-size: contain;
+    }
+
+    .our-contacts .contacts div.logo {
+        margin-bottom: 30px;
+    }
+
+    #our-contacts .date-of-work {
+        display: flex;
+    }
+
+    .footer {
+        padding: 50px 0;
+    }
+
+    .footer__row {
+        flex-direction: column;
+    }
+
+    .footer__column:nth-child(2) {
+        display: none;
+    }
+
+    .footer__column:nth-child(3) {
+        margin: 20px 0;
+    }
+
+    .shares__title, .services__title, .why-belarus__title, .about-us__row-top h2, .why-belarus .why-belarus__title {
+        margin-bottom: 60px;
+    }
+
+    #shares, #services, #about-us, .why-belarus, .how-we-work, .our-contacts {
+        padding: 50px 0;
+    }
+
+
+    .form {
+        min-width: 300px;
+        max-width: 300px;
+    }
+
+    .form__description {
+        margin-bottom: 30px;
+    }
+
+    .navbar-collapse__nav {
+        position: absolute;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        background: white;
+    }
+
+    .header__nav .menu-nav{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: flex-start;
+        margin-left: 20px;
+    }
+
+    .header__nav .menu-nav .menu-nav__item, .header__nav .menu-nav .menu-nav__item a {
+        padding: 0;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .header__nav .navbar-collapse__nav {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .header__nav .menu-nav .menu-nav__change-lang {
+        margin-bottom: 20px;
+        padding: 0;
+        font-size: 1.5rem;
+    }
+
+    .form-switch {
+        margin-left: 0;
+    }
+
+    .wrapper__nav .logo {
+        z-index: 3;
+    }
+
+    nav.hidden {
+        margin: 0;
+    }
+
+    nav.static {
+        position: sticky;
+    }
+    .header__nav .menu-nav .menu-nav__change-lang::before {
+        content: '';
+        position: absolute;
+        top: 25%;
+        left: 120%;
+        padding: 5px;
+        width: 100%;
+        height: 100%;
+        background: var(--color);
+        background: url(./img/slide.svg) no-repeat;
+    }
+
+    .header__nav {
+        padding: 20px 0;
+    }
+
+    .collapse-btn {
+        z-index: 3;
+    }
+
+    .collapse-btn {
+        border: 2px solid var(--color);
+        width: 50px;
+        height: 50px;
+        border-radius: 2px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar-collapse__nav.open + .collapse-btn span {
+        display: block;
+        width: 40px;
+        height: 1px;
+        background: var(--color);
+        margin-bottom: 10px;
+    }
+     .navbar-collapse__nav.open + .collapse-btn span:last-child {
+        margin-bottom: 0;
+    }
+
+    .header__nav .collapse-btn span {
+        display: block;
+        width: 40px;
+        height: 1px;
+        background: var(--color);
+        transition: .5s ease;
+    }
+
+    .header__nav .navbar-collapse__nav.open + .collapse-btn span {
+        transform: rotate(0);
+     }
+
+    .collapse-btn span:nth-child(1) {
+        transform: rotate(50deg);
+        width: 30px;
+    }
+    .collapse-btn span:nth-child(2) {
+        transform: rotate(-50deg);
+        width: 30px
+    }
+    .collapse-btn span:last-child {
+        display: none;
+    }
+
+
+    .navbar-collapse__nav {
+        transition: .5s ease;
+        z-index: 2;
+    }
+
+    .navbar-collapse__nav.open {
+        transform: translateX(100%);
+        
+    }
+
+  }
+
+  
+
+  @media screen and (max-width: 470px )  {
+    html {
+        font-size: 12px !important;
+    }
+    .service__img img {
+        width: 100%;
+    }
+
+    .our-contacts__form {
+        padding: 50px 30px;
+    }
+}
+
+@media screen and (max-width: 340px )  {
+    html {
+        font-size: 10px !important;
+    }
+    .service__img img {
+        width: 100%;
+    }
+
+    .our-contacts__form {
+        padding: 30px 10px;
+    }
+
+    form.form {
+        max-width: 220px;
+        min-width: 220px;
+    }
+}
